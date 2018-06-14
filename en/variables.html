@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Variables</title>
+</head>
+
+<body>
+  <div class="global">
+    <!-- Header, menu and footer part, on the left -->
+    <div class="sidebar">
+      <header>
+        <h1><a href="index.html"><img src="../css/img/logo_algorithmique.png" alt="logo" class="sidebar__logo"></a></h1>
+        <nav class="menu">
+          <ul>
+            <li><a class="menu__title menu__title--current" href="variables.html#variables">Variables</a></li>
+            <li><a class="menu__subtitle" href="variables.html#proprietes">Properties</a></li>
+            <li><a class="menu__subtitle" href="variables.html#operations">Operators</a></li>
+            <li><a class="menu__subtitle" href="variables.html#algo">Algorithms</a></li>
+          </ul>
+          <ul>
+            <li><a class="menu__title" href="tests_conditionnels.html#conditionnels">Conditional Testing</a></li>
+            <li><a class="menu__subtitle" href="tests_conditionnels.html#sisinon">If Else</a></li>
+            <li><a class="menu__subtitle" href="tests_conditionnels.html#selon">Switch Case</a></li>
+            <li><a class="menu__subtitle" href="tests_conditionnels.html#comparaisons">Comparisons</a></li>
+          </ul>
+          <ul>
+            <li><a class="menu__title" href="fonctions.html#fonctions">Functions</a></li>
+            <li><a class="menu__subtitle" href="fonctions.html#caracteristique">Features</a></li>
+            <li><a class="menu__subtitle" href="fonctions.html#exemples">Examples</a></li>
+          </ul>
+        </nav>
+      </header>
+      <footer>
+        <img src="../css/img/logo_passnum.png" alt="logo Passnum" class="footer__logo">
+      </footer>
+    </div>
+
+    <!-- right part dedicated for the lessons -->
+
+    <main>
+      <div id="variables" class="lesson__title">
+        <h2>VARIABLES</h2>
+      </div>
+      <section class="lesson">
+        <article class="course">
+          <h4>Definition</h4>
+          <p>Algorithmic is a method of problems solving. An algorithm  consist in a non-ambiguous instructions suit who permit to reach a given result.<br> We can speak about a « Pathfinder » which always go to the ideal way.</p>
+        </article>
+        <article id="proprietes" class="course">
+          <h3>Les Propriétés</h3>
+          <p>Afin d’executer un algorithme, des informations (valeurs) sont stockées puis utilisées. On utilise des variables pour stocker ces informations.<br> Une variable est constituée de quatre caractéristiques : un nom, un type, une valeur et une affectation.<br>
+            <span class="course__txt--notation">type nom ← valeur</span> On peut assimiler le concept de variable à une boite. La nom de la variable représente l’étiquette et sa valeur représente le contenu de la boite.</p>
+          <h4>La valeur</h4>
+          <p>La valeur d’une variable peut varier dans l’algorithme.</p>
+          <h4>Le nom</h4>
+          <p>Le nom de la variable est écrit sous la forme d'une chaîne de caractères constituée de lettres et de chiffres mais ne ne peut pas contenir de caractères spéciaux.<br> Le nom de la variable doit être explicite et le plus représentatif possible
+            du contenu de celle-ci pour faciliter la lecture de l'algorithme. <br>Il ne doit pas être trop long pour ne pas nuire à la lisibilité de l’ensemble.<br> Il doit être différent des valeurs interdites (termes ayant déjà une signification dans
+            l’algorithmique, par exemple « faux » ou « entier » sont des valeurs interdites).<br> Le nom ne commence jamais par une majuscule, ne doit pas contenir d’espace et doit utiliser la notation camelCase (une Majuscule à chaque début de mot) afin
+            de faciliter la lecture.<br>
+            <span class="course__txt--exemple">exemple: entier NumeroDeTelephone ← 0606060606</span></p>
+          <h4>Le type</h4>
+          <p>Les types définissent les caractéristiques des valeurs de la variable.<br> Il existe quatre types primitifs de variable:<br> Nombre entier (noté entier) : tout nombre entier, ex: 20 <br> Nombre décimal (noté decimal) : tout nombre décimal, ex:
+            1,2 <br> Caractère (noté car) : un caractère, doit se noter entre ‘cote’, ex: ‘a’ <br> Booléen (noté booleen): seulement deux valeurs possibles: vrai ou faux. <br> (les types primitifs s’écrivent tout en minuscule)<br><br> Il existe d’autres
+            types de variables dérivés appelés types non-primitifs.<br> La chaîne de caractère (Chaîne): contient plusieurs caractères, doit se noter entre « guillemets »<br>
+            <span class="course__txt--exemple">exemple: « Bonjour ! »</span></p>
+          <h4>l’affectation</h4>
+          <p>L'affectation suit la déclaration. Il s'agit d'attribuer des valeurs ou des expressions à une variable. <br>Lorsque que la variable est affectée, on dit que la variable vaut une valeur.</p>
+          <span class="course__txt--exemple">exemple: La variable NumeroDeTelephone vaut 0606060606</span>
+          <p>Les variables dont la valeur est inéchangeable dans l’algorithme sont des Constantes. Mis a part leur valeurs inchangeables, elle ont les mêmes caractéristiques que les variables. La première lettre du nom d’une constante s’écrit en majuscule.
+            <span class="course__txt--exemple">exemple: decimal Pi ← 3.14 </span>
+          </p>
+        </article>
+        <article id="operations" class="course">
+          <h3>Les opérations</h3>
+          <p> les opérations valides sur les variables sont l’addition (+), la soustraction (-), la multiplication (x) et la division (/). <br> Les opérations sont valides seulement les variables de même type.<br>
+            <span class="course__txt--exemple">exemple : entier a ← 10 + 20 <span class="course__txt--commentaire">// résultat vaut 30<br></span> entier b ← 10 + « hello » <span class="course__txt--commentaire">// Erreur, opération impossible car " hello " est une chaîne</span></p>
+          <h4>la concaténation</h4>
+          <p>la concaténation sert à insérer des chaînes de caractères ou des valeurs de variables de types Chaine les unes à la suite des autres. Elle se note avec un point.<br>
+            <span class="course__txt--exemple">exemple: afficher («Mon nom est  ».prenom. «  ! »)</span></p>
+        </article>
+        <article id="algo" class="course">
+          <h3>Les algorithmes</h3>
+          <p><span class="course__txt--notation">« Début »</span> et <span class="course__txt--notation">« Fin »</span> servent à indiquer quand commence et se termine l’algorithme. Les deux termes sont obligatoires.<br>Souvent, une interface graphique sert
+            à afficher le résultat d’un algorithme.</p>
+          <h4>Les commentaires</h4>
+          <p>On peut annoter un algorithme afin de le rendre plus lisible.<br>
+            <span class="course__txt--commentaire">// un commentaire sur une ligne s’écrit comme ceci //</span><br><br>
+            <span class="course__txt--commentaire">/* tandis qu’un commentaire sur plusieurs lignes<br>
+                se note comme cela */</span><br><br>
+            <h4>Les retours à la ligne</h4>
+            <p>les retours à la ligne interviennent à la fin d’une ligne et se notent : <span class="course__txt--notation">↵</span></p>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

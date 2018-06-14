@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="../css/img/favicon.png"/>
+  <link rel="stylesheet" href="../css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script rel="text/javascript" src="../js/script.js"></script>
+  <title>Tests conditionnels</title>
+</head>
+
+<body>
+  <div class="global">
+    <!-- Header, menu and footer part, on the left -->
+    <div id="mySidenav" class="sidebar">
+      <header>
+        <h1><a href="index.html"><img src="../css/img/logo_algorithmique.png" alt="logo" class="sidebar__logo"></a></h1>
+        <nav class="menu">
+          <ul>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+            <li><a class="menu__title" href="variables.html">Les variables</a></li>
+            <li><a class="menu__subtitle" href="variables.html#proprietes">Les propriétés</a></li>
+            <li><a class="menu__subtitle" href="variables.html#operations">Les opérations</a></li>
+            <li><a class="menu__subtitle" href="variables.html#algo">Les algorithmes</a></li>
+          </ul>
+          <ul>
+            <li><a class="menu__title menu__title--current" href="tests_conditionnels.html">Tests conditionnels</a></li>
+            <li><a class="menu__subtitle" href="tests_conditionnels.html#sisinon">Si Sinon</a></li>
+            <li><a class="menu__subtitle" href="tests_conditionnels.html#selon">Selon Cas</a></li>
+            <li><a class="menu__subtitle" href="tests_conditionnels.html#comparaisons">Les comparaisons</a></li>
+          </ul>
+          <ul>
+            <li><a class="menu__title" href="fonctions.html">Les fonctions</a></li>
+            <li><a class="menu__subtitle" href="fonctions.html#caracteristique">Caractéristiques</a></li>
+            <li><a class="menu__subtitle" href="fonctions.html#exemples">Exemples</a></li>
+          </ul>
+          <ul>
+            <li><a class="menu__title" href="boucles.html">Boucles</a></li>
+          </ul>
+          <ul>
+            <li><a class="menu__title" href="tableaux.html">Tableaux</a></li>
+          </ul>
+        </nav>
+      </header>
+      <footer>
+      <a class="global" href="http://www.passerelle-numerique.fr/"><img src="../css/img/logo_passnum.png" alt="logo Passnum" class="footer__logo"></a>
+      </footer>
+    </div>
+    <!-- right part dedicated for the lessons -->
+    <main id="main-right" class="">
+      <div id="conditionnels" class="lesson__title">
+        <span id="spp" style="font-size:30px;cursor:pointer" onclick="openNav();">&#9776; </span>
+        <h2>TESTS CONDITIONNELS</h2>
+      </div>
+      <div class="margin-top--100"></div>
+      <section class="lesson">
+        <article class="course">
+          <p>On peut tester des conditions sur les variables afin d’effectuer des instructions différentes selon ces conditions.</p>
+        </article>
+        <article id="sisinon" class="course">
+          <h3>Si Sinon</h3>
+          <p>Dans le test Si FinSI, les conditions renvoient obligatoirement à un booléen ou une expression booléenne.</p>
+          <p>Les tests conditionnels peuvent s’emboiter grâce à l’expression SinonSi. Dans ce cas l’indentation est « en cascade ».</p>
+          <!--<img src="../css/img/schema_sinonsi.png" alt="schema SinonSi">-->
+          <div class="algo--exemple">
+            <p class=""><em class="color--blue">Si</em> (<em class="color--red">booléen</em>)</p>
+            <p class="indent--1"><em class="color--red">instructions</em></p>
+            <p class=""><em class="color--blue">SinonSi</em> (<em class="color--red">booléen</em>)</p>
+            <p class="indent--1"><em class="color--red">instructions</em></p>
+            <p class=""><em class="color--blue">Sinon</em></p>
+            <p class="indent--1"><em class="color--red">instructions</em></p>
+            <p class=""><em class="color--blue">FinSi</em></p>
+            <p class=""><em class="color--blue">FinSi</em></p>
+          </div>
+        </article>
+        <article id="selon" class="course">
+          <h3>Selon Cas</h3>
+          <p>Selon teste des conditions sur des variables de type entier</p>
+          <!--<img src="../css/img/schema_seloncas.png" alt="Schema Selon">-->
+          <div class="algo--exemple">
+            <p class=""><em class="color--blue">Selon</em> (<em class="color--red">entier</em>)</p>
+            <p class="indent--1"><em class="color--blue">cas</em> (<em class="color--red">entier</em>)</p>
+            <p class="indent--2"><em class="color--red">instructions</em></p>
+            <p class="indent--2"><em class="color--blue">QuitterSelon</em></p>
+            <p class="indent--1"><em class="color--blue">cas</em> (<em class="color--red">entier</em>)</p>
+            <p class="indent--2"><em class="color--red">instructions</em></p>
+            <p class="indent--2"><em class="color--blue">QuitterSelon</em></p>
+            <p class="indent--1"><em class="color--blue">ParDefaut</em></p>
+            <p class="indent--2"><em class="color--red">instructions</em></p>
+            <p class="indent--2"><em class="color--blue">QuitterSelon</em></p>
+            <p class=""><em class="color--blue">FinSelon</em></p>
+          </div>
+          <p><em class="">quitterSelon </em> est optionnel, si le cas est vérifié, il permet de sortir du test conditionnel.</p>
+          <p><em class="">ParDefaut </em>renvoie à une instruction qui est exécutée si la conditions n’est vérifiée dans aucun des cas. Il est optionnel.</p>
+        </article>
+        <article id="comparaisons" class="course">
+          <h3>Les comparaisons</h3>
+          <p>On peut comparer les variables du même type entre elles.<br><br> La comparaison nécessaire « et », notée « & » renvoie à un booléen (ou une expression booléenne). <br> Les deux conditions doivent être vérifiées pour effectuer l’instruction.
+            <br><br> La comparaison suffisante « ou » se note l, elle renvoie à un booléen (ou une expression booléenne).<br> Une seule conditions doit être vérifiée pour effectuer l’instruction.<br><br> Tableau récapitulatif des comparateurs valides
+            :
+          </p>
+          <img src="../css/img/tableau_comparateurs.png" alt="Tableau des comparateurs">
+        </article>
+      </section>
+    </main>
+  </div>
+  <a href="tests_conditionnels.html" title="Haut de Page" class="topbutton">En haut </a>
+</body>
+
+</html>

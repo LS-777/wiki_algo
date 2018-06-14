@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="../css/img/favicon.png"/>
+  <link rel="stylesheet" href="../css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script rel="text/javascript" src="../js/script.js"></script>
+  <title>Tableaux</title>
+</head>
+
+<body>
+  <div class="global">
+    <!-- Header, menu and footer part, on the left -->
+    <div id="mySidenav" class="sidebar">
+      <header>
+        <h1><a href="index.html"><img src="../css/img/logo_algorithmique.png" alt="logo" class="sidebar__logo"></a></h1>
+        <nav class="menu">
+          <ul>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+            <li><a class="menu__title" href="variables.html">Variables</a></li>
+            <li><a class="menu__subtitle" href="variables.html#proprietes">Les propriétés</a></li>
+            <li><a class="menu__subtitle" href="variables.html#operations">Les opérations</a></li>
+            <li><a class="menu__subtitle" href="variables.html#algo">Les algorithmes</a></li>
+          </ul>
+          <ul>
+            <li><a class="menu__title" href="tests_conditionnels.html">Tests conditionnels</a></li>
+            <li><a class="menu__subtitle" href="tests_conditionnels.html#sisinon">Si Sinon</a></li>
+            <li><a class="menu__subtitle" href="tests_conditionnels.html#selon">Selon Cas</a></li>
+            <li><a class="menu__subtitle" href="tests_conditionnels.html#comparaisons">Les comparaisons</a></li>
+          </ul>
+          <ul>
+            <li><a class="menu__title" href="fonctions.html">Fonctions</a></li>
+            <li><a class="menu__subtitle" href="fonctions.html#caracteristique">Caractéristiques</a></li>
+            <li><a class="menu__subtitle" href="fonctions.html#exemples">Exemples</a></li>
+          </ul>
+          <ul>
+            <li><a class="menu__title" href="boucles.html">Boucles</a></li>
+          </ul>
+          <ul>
+            <li><a class="menu__title menu__title--current" href="tableaux.html">Tableaux</a></li>
+          </ul>
+        </nav>
+      </header>
+      <footer>
+        <a class="global" href="http://www.passerelle-numerique.fr/"><img src="../css/img/logo_passnum.png" alt="logo Passnum" class="footer__logo"></a>
+      </footer>
+    </div>
+    <!-- right part dedicated for the lessons -->
+    <main id="main-right" class="">
+      <div id="tableaux" class="lesson__title">
+        <span id="spp" style="font-size:30px;cursor:pointer" onclick="openNav();">&#9776; </span>
+        <h2>TABLEAUX</h2>
+      </div>
+      <div class="margin-top--100"></div>
+      <section class="lesson">
+        <article class="course">
+          <p> Le tableau est sans aucun doute l'une des structures de stockage de données les plus utilisées en programmation. On l'apelle aussi variable indicée.</p>
+        </article>
+
+        <article id="tableaux" class="course">
+          <h3>Définition & utilité des Tableaux</h3>
+          <p>Un tableau unidimensionnel permet de stocker une ou plusieurs valeurs dans une seule et même variable,dans le but de faciliter le "rangement" des données, leur lecture, et leur accès.</p>
+          <p>Un indice est automatiquement attribué à chaque valeur du tableau, ce qui permet de connaître sa position au sein de celui-ci (comme dans la plupart des languages de programmation, le premier indice est 0, gare à la confusion!).</p>
+          <strong><p>La longueur totale du tableau est donc le dernier indice de celui-ci +1.</p></strong></br>
+          <p> Comme toute autre variable, un tableau possède un type, et a une notation bien à lui. </p>
+          <p>Jusqu'à preuve du contraire, le tableau et ses valeurs se doivent donc d'être du même type, au risque de renvoyer une erreur (en tout cas dans le pseudo-code très peu permissif que nous utilisons).</p></br>
+        </article>
+
+        <article id="tableaux" class="course">
+          <h3> Utilisation des Tableaux</h3>
+
+          <h4>Initialisation:</h4>
+          <span class="course__txt--notation">type  [ ] nomTableau ←{valeur1, valeur2, valeur3, ...  valeur x}      </span>
+
+          <h4>Accès aux valeurs:</h4>
+          <span class="course__txt--notation">nomTableau [x]      </span>
+          <span class="course__txt--notation">  → renvoie la valeur du tableau "nomTableau" stockée à l'indice x.</span>
+        </article>
+
+        <article id="tableaux" class="course">
+          <span class="course__txt--exemple">soit le tableau suivant:</span></br>
+
+          <span class="course__txt--exemple--tab">Chaine [ ]  joliTableau ← {"Voici", "un", "joli", "tab"}</span></br>
+
+        <img src="../css/img/joli_tab.png" alt="Schema Tableaux"></br>
+
+        <span class="course__txt--exemple">Manipuler la valeur du tableau à l'indice 3 (y accéder, la supprimer ou la changer):</span></br>
+        <span class="course__txt--exemple--tab">      joliTableau [3] ← "joli"</span>
+        <span class="course__txt--exemple">Faire appel à un tableau en paramètre d'une fonction:</span></br>
+        <span class="course__txt--exemple--tab">fonction (joliTableau)</span>
+
+      </article>
+
+
+    </main>
+  </div>
+  <a href="tableaux.html" title="Haut de Page" class="topbutton">En haut </a>
+</body>
+
+</html>

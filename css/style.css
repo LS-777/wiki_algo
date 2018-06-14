@@ -1,0 +1,297 @@
+/*fonts*/
+@font-face {
+  font-family: "Aleo-Bold";
+  src: url("../css/font/Aleo-Bold.otf");
+}
+
+@font-face {
+  font-family: "Aleo-Regular";
+  src: url("../css/font/Aleo-Regular.otf");
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url("../css/font/SourceSansPro-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url("../css/font/SourceSansPro-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url("../css/font/SourceSansPro-Italic.ttf");
+  font-style: italic;
+}
+
+/*general attributes */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+.global {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*Sidebar (header) & components part*/
+.sidebar {
+  width: 0;
+  flex: 1;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: flex-start;
+  background-color: #e7e2e2;
+  height: 100%;
+}
+
+.menu {
+  margin-left: 15%;
+  width: 100%;
+}
+
+.menu > ul {
+  margin: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu__title {
+  font-family: "Aleo-Regular";
+  color : #F2583E;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: block;
+}
+
+.menu__title:hover ,.menu__title:focus, .menu__title:active, .menu__title--current {
+  /*font-size: 1.6em;*/
+  color: whitesmoke;
+  background-color: #F2583E;
+  /*padding: 2px 2px;*/
+}
+
+.menu__subtitle {
+  font-family: "Aleo-Regular";
+  margin-left: 15px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 1px;
+}
+
+.menu__subtitle:hover ,.menu__subtitle:focus, .menu__subtitle:active {
+  /*font-size: 1.1em;*/
+  color: #EDEDED;
+  background-color: #F2583E;
+  /*margin: 4px 4px;
+  padding: 1px 14px;*/
+}
+
+.sidebar__logo {
+  width: 80%;
+  margin: auto;
+  padding: auto;
+}
+.sidebar h1 {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo {
+  width: 50%;
+  margin: auto;
+}
+
+/*Lessons part*/
+
+main#main-right {
+  flex: 3;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+.lesson__title {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  max-height: 90px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2583e;
+}
+
+.lesson {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.course {
+  margin: 10px 5%;
+  padding: 0;
+}
+
+.course__txt--exemple--tab {
+margin: 2px;
+display: block;
+font-style: italic;
+color : #558000;
+margin-bottom: 3%;
+}
+/*Text, titles, subtitles part*/
+
+h2 {
+  font-family: "Aleo-Regular";
+  color:#EDEDED;
+  font-size: 2em;
+
+}
+
+h3 {
+  font-family: "Aleo-Regular";
+  color:  #F2583E;
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-family: "Aleo-Regular";
+  font-size: 1.2em;
+  font-weight: 600;
+  color: dimgrey;
+}
+
+p, span, li {
+  font-family: Source Sans Pro, sans-serif;
+  font-style: normal;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+.course p{
+  line-height: 1.5em;
+}
+
+.course__txt--notation {
+  display: block;
+  margin: 2px;
+  color: #2A2889;
+  font-weight: bold;
+}
+
+.course__txt--exemple {
+  margin: 2px;
+  display: block;
+  font-style: italic;
+  color : #558000;
+}
+
+.course__txt--commentaire {
+  color: #8c6858;
+}
+
+.indent--1 {
+  margin-left: 2%;
+}
+
+.indent--2 {
+  margin-left: 4%;
+}
+
+.indent--3 {
+  margin-left: 6%;
+}
+
+.algo--exemple {
+  border-style: solid;
+  border-width: 1px;
+  line-height: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 25px;
+}
+
+.color--blue {
+  color: blue;
+}
+
+.color--red {
+  color: red;
+}
+
+em {
+  font-style: normal;
+  font-size: 20px;
+}
+
+.topbutton {
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+ }
+
+.sidebar a:hover {
+    color: #f1f1f1 ;
+ }
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+ }
+
+span#spp {
+  margin-right: 20px;
+}
+
+span#spp:hover {
+  transition: 0.3s;
+  color:#f1f1f1;
+}
+
+.margin-top--100 {
+  margin-top: 100px;
+}
